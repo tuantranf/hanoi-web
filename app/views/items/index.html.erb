@@ -1,6 +1,6 @@
 <h1>Listing items</h1>
 
-<table>
+<table class="table table-bordered table-hover">
   <thead>
     <tr>
       <th>Title</th>
@@ -20,9 +20,9 @@
     <% @items.each do |item| %>
       <tr>
         <td><%= item.title %></td>
-        <td><%= item.url %></td>
+        <td><a href="<%= item.url %>">Link here!</a></td>
         <td><%= item.desc %></td>
-        <td><%= item.image %></td>
+        <td><img src="<%= item.image %>" width="500px" /></td>
         <td><%= item.pub_date %></td>
         <td><%= item.tag %></td>
         <td><%= item.created_at %></td>
