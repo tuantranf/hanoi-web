@@ -1,5 +1,11 @@
 <h1>Listing items</h1>
 
+<!-- 追加箇所開始 -->
+<%= page_entries_info @items %>
+
+<%= paginate @items %>
+<!-- 追加箇所終了 -->
+
 <table class="table table-bordered table-hover">
   <thead>
     <tr>
@@ -37,3 +43,8 @@
 <br>
 
 <%= link_to 'New Item', new_item_path %>
+
+<!-- 追加箇所開始 -->
+<%= paginate @items %>
+<!-- 追加箇所終了 -->
+
